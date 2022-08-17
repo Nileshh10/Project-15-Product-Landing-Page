@@ -18,6 +18,7 @@ body {
     background-color: var(--bg-dark);
     font-family: "Montserrat", sans-serif;
     color: var(--white);
+    overflow-x: hidden;
 }
 
 .container {
@@ -29,6 +30,7 @@ body {
     justify-content: space-between;
     height: 15vh;
     align-items: center;
+    overflow-x: auto;
 }
 .navbar .logo-container img {
     width: 100px;
@@ -41,6 +43,19 @@ body {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 1045px) {
+    .navbar .list {
+        gap: 40px;
+        margin-top: 5px;
+    }
+    .navbar .logo-container {
+        margin-right: 50px;
+    }
+    .navbar .list li:last-child {
+        width: 100px;
+    }
 }
 
 /*---------------------- hero section --------------------*/
@@ -90,6 +105,46 @@ body {
     z-index: -1;
 }
 
+@media only screen and (max-width: 1045px) {
+    .hero .left-image {
+        margin-top: 0px;
+    } 
+    .hero .left-image img {
+        width: 500px;
+    }
+    .hero .right-headline h4 {
+        font-size: 1.1rem;
+    }
+    .hero .right-headline h1 {
+        font-size: 2.4rem;
+    }
+    .hero .right-headline p {
+        font-size: 1rem;
+    }
+    .hero .right-headline button {
+        padding: 14px 30px;
+    }
+    .hero .box {
+        position: absolute;
+        background-color: var(--bg-dark-light);
+        width: 43rem;
+        height: 960px;
+        left: -200px;
+        top: 500px;
+        z-index: -1;
+    }
+    
+}
+@media only screen and (max-width: 808px) {
+    .hero {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .hero .right-headline {
+        margin-top: 50px;
+    }
+    
+}
 
 /*----------------------- service section ----------------------*/
 .serveice-section {
@@ -181,6 +236,56 @@ body {
     padding-top: 5px;
 }
 
+@media only screen and (max-width: 1045px) {
+    .serveice-section .service-cards .service-card h1 {
+        font-size: 1.5rem;
+    }
+    .serveice-section .service-cards .service-card p {
+        font-size: 1.1rem;
+    }
+    .serveice-section .service-cards .service-card .logo img {
+        width: 40px;
+    }
+    .serveice-section .service-cards {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 808px) {
+    .service-stats {
+        margin: 90px auto;
+        flex-direction: column;
+    }
+    .service-stats .left h1 {
+        font-size: 4rem;
+    }
+    .service-stats .left p {
+        font-size: 1.5rem;
+    }
+    .service-stats .right {
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .service-stats .right .card {
+        background-color: var(--bg-dark-light-2);
+        width: 10rem;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-stats .right .card h1 {
+        color: var(--primary-light);
+        font-size: 2.9rem;
+    }
+    .service-stats .right .card p {
+        color: var(--text-gray);
+        font-size: 17px;
+        padding-top: 5px;
+    }
+}
+
 
 /*----------------------- project section ---------------------*/
 .featured-projects {
@@ -249,6 +354,63 @@ body {
     width: 30rem;
 }
 
+@media only screen and (max-width: 1045px) {
+    .featured-projects .project-headline h1 {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    .featured-projects .project-headline p {
+        padding-top: 14px;
+        color: var(--text-gray);
+        padding-bottom: 12px;
+        font-size: 1rem;
+    }
+    .featured-projects .project-headline button {
+        background-color: var(--primary-light);
+        color: var(--white) ;
+        padding: 8px 20px;
+        border: none;
+        text-transform: uppercase;
+        font-size: 17px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 808px) {
+ 
+    .featured-projects .project-headline {
+        padding: 0 20px;
+    }
+    .featured-projects .project-headline h1 {
+        font-size: 1.2rem;
+    }
+    .featured-projects .project-headline p {
+        font-size: .8rem;
+    }
+    .featured-projects .project-headline button {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+    .featured-projects .project-cards {
+        padding: 0 10px;
+    }
+    .featured-projects .project-cards .project-card {
+        width: 100vw;
+    }
+    .featured-projects .project-cards .project-card h1  {
+        margin: 0 20px;
+    }
+    .featured-projects .project-cards .project-card span  {
+        margin: 0 20px;
+    }
+    .featured-projects .project-cards .project-card .project-img {
+        width: 100%;
+    }
+    .featured-projects .project-cards .project-card img {
+        width: 90%;
+    }
+}
+
 
 /*----------------------- contact section --------------------*/
 .contact-section {
@@ -282,6 +444,40 @@ body {
     cursor: pointer;
     font-size: 1.1rem;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1151px) {
+    .contact-section .contact-card .left h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .contact-section .contact-card .left p {
+        font-size: 1rem;
+    }
+    .contact-section .contact-card .right {
+        padding-right: 0px;
+    }
+    .contact-section .contact-card .right button {
+        padding: 14px 40px;
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width: 724px) {
+    .contact-section {
+        padding: 0 10px;
+    }
+    .contact-section .contact-card .right button {
+        margin-top: 40px;
+    }
+    .contact-section .contact-card {
+        height: auto;
+    }
+    .contact-section .contact-card .left h1 {
+        font-size: 1.5rem;
+    }
+    .contact-section .contact-card .left p {
+        font-size: .9rem;
+    }
 }
 
 
@@ -320,4 +516,15 @@ body {
 }
 .footer-wrapper .social-icons img:not(:last-child) {
     margin-right: 40px;
+}
+
+@media only screen and (max-width: 950px) {
+   
+    .footer {
+        max-width: 0rem;
+        margin: 0;
+    }
+    .footer-wrapper {
+        justify-content: center;
+    }
 }
