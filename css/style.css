@@ -43,6 +43,10 @@ body {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 500;
+    cursor: pointer;
+}
+.list li:hover{
+    font-weight: bolder;
 }
 
 @media only screen and (max-width: 1045px) {
@@ -94,6 +98,11 @@ body {
     text-transform: uppercase;
     padding: 18px 40px;
     margin-top: 40px;
+}
+.hero .right-headline button:hover{
+    background-color: #111111;
+    color: white;
+    border: 2px solid red;
 }
 .hero .box {
     position: absolute;
@@ -350,6 +359,12 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
+.headline-right button:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+}
+
 .featured-projects .project-cards .project-card img {
     width: 30rem;
 }
@@ -445,6 +460,11 @@ body {
     font-size: 1.1rem;
     text-transform: uppercase;
 }
+.contact-section .contact-card .right button:hover{
+    background-color: #111111;
+    color: white;
+    border: 2px solid red;
+}
 
 @media only screen and (max-width: 1151px) {
     .contact-section .contact-card .left h1 {
@@ -493,6 +513,7 @@ body {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .footer-wrapper {
     position: absolute;
@@ -513,6 +534,7 @@ body {
 .footer-wrapper .social-icons {
     text-align: center;
     margin-left: 220px;
+    cursor: pointer;
 }
 .footer-wrapper .social-icons img:not(:last-child) {
     margin-right: 40px;
